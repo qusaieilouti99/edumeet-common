@@ -13,7 +13,7 @@ export type clientAddress = {
     address: string;
     forwardedFor?: string;
 };
-export declare class IOChatServerConnection extends BaseConnection {
+export declare class IOChatServerConnection extends BaseConnection<ChatSocketMessage> {
     closed: boolean;
     private socket;
     constructor(socket: Socket<ClientServerEvents, ServerClientEvents>);

@@ -17,10 +17,10 @@ export interface ChatSocketMessage {
 /**
  * Interface for any signaling class.
  */
-export interface SignalingInterface {
+export interface SignalingInterface <T> {
 	// Outbound messages
-	notify: (notification: SocketMessage) => void;
+	notify: (notification: T) => void;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	request: (request: SocketMessage) => Promise<unknown>;
+	request: (request: T) => Promise<unknown>;
 	close: () => void;
 }

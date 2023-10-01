@@ -33,7 +33,7 @@ export type clientAddress = {
 
 const logger = new Logger('SocketIOConnection');
 
-export class IOChatServerConnection extends BaseConnection {
+export class IOChatServerConnection extends BaseConnection<ChatSocketMessage> {
 	public closed = false;
 	private socket: Socket<ClientServerEvents, ServerClientEvents>;
 

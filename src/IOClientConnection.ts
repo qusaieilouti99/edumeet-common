@@ -28,7 +28,7 @@ interface ServerClientEvents {
 
 const logger = new Logger('SocketIOConnection');
 
-export class IOClientConnection extends BaseConnection {
+export class IOClientConnection extends BaseConnection<SocketMessage>  {
 	public static create({ url }: { url: string}): IOClientConnection {
 		logger.debug('create() [url:%s]', url);
 	

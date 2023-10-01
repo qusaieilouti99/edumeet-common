@@ -11,8 +11,8 @@ export interface ChatSocketMessage {
 /**
  * Interface for any signaling class.
  */
-export interface SignalingInterface {
-    notify: (notification: SocketMessage) => void;
-    request: (request: SocketMessage) => Promise<unknown>;
+export interface SignalingInterface<T> {
+    notify: (notification: T) => void;
+    request: (request: T) => Promise<unknown>;
     close: () => void;
 }
