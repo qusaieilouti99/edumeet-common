@@ -6,6 +6,14 @@ export interface SocketMessage {
 	data?: any; // TODO: define inbound notification data
 }
 
+export interface ChatSocketMessage {
+	peerId:string;
+	roomId:string;
+	method: string; // TODO: define inbound notification method strings
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	data?: any; // TODO: define inbound notification data
+}
+
 /**
  * Interface for any signaling class.
  */
