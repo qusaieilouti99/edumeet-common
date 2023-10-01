@@ -3,8 +3,8 @@ export interface SocketMessage {
     data?: any;
 }
 export interface ChatSocketMessage {
-    peerId: string;
-    roomId: string;
+    peerId?: string;
+    roomId?: string;
     method: string;
     data?: any;
 }
