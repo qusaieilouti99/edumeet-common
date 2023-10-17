@@ -7,8 +7,7 @@ export interface SocketMessage {
 }
 
 export interface ChatSocketMessage {
-	peerId?:string;
-	roomId?:string;
+	peerData?:any;
 	method: string; // TODO: define inbound notification method strings
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	data?: any; // TODO: define inbound notification data
