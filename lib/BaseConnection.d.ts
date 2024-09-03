@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import { EventEmitter } from 'events';
 import { SignalingInterface } from './SignalingInterface';
 export type InboundNotification<T> = (notification: T) => void;

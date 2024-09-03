@@ -1,4 +1,3 @@
-/// <reference types="node" />
 export interface RawSocketMessage {
     request?: true;
     response?: true;

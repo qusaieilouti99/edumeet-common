@@ -1,4 +1,3 @@
-/// <reference types="debug" />
 export declare class Logger {
     #private;
     constructor(prefix?: string);
